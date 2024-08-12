@@ -99,6 +99,8 @@ button{
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,.menu-link:focus{
@@ -124,6 +126,8 @@ button{
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .adr-comm:hover,.adr-comm:focus{
@@ -140,7 +144,7 @@ button{
     padding-top: 188px;
     padding-bottom: 188px;
     margin: 0, auto;
-    background-image: url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -173,11 +177,13 @@ button{
     height: 56px;
     display: block;
     margin: 0 auto;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,.button:focus{
     background-color: #404bbf;
-    border-color: #404bbf;
+    border-color: none;
 
 }
 
@@ -265,6 +271,8 @@ button{
     background-color: #fff;
     width: calc((100% - 24px*3)/4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
 
 .team-dan {
@@ -296,7 +304,9 @@ button{
 .team-icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    lex-direction: row;
+    gap: 24px;
 }
 
 .team-svg {
@@ -306,6 +316,9 @@ button{
     fill: #fff;
     background-color: #4D5AE5;
     padding: 12px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   }
   
   .team-svg:hover, .team-svg:focus {
@@ -341,12 +354,23 @@ button{
     row-gap: 48px;
 }
 
+
+
+
 .set-list {
     flex-basis: calc((100% - 48px)/3);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.set-list:hover, .set-list:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+}
+
+
 img {
-    display: block;
+   display: block;
    max-width: 100%;
    height: auto;
 }
@@ -408,9 +432,9 @@ img {
 .footer-icon {
     max-width: 208px;
     max-height: 80px;
-    margin-left: 540px;
-    /*margin-top: 100px;
-    margin-bottom: 132px;*/
+    margin-left: 384px;
+    margin-top: 100px;
+    /*margin-bottom: 132px;*/
 }
 
 .footer-media {

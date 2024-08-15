@@ -312,20 +312,23 @@ button{
     gap: 24px;
 }
 
-.sn-icon {
-    border-radius: 50%;
+.sn-link {
     width: 40px;
     height: 40px;
-    fill: #fff;
     background-color: #4D5AE5;
-    padding: 12px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   
+}
 
-  }
-
-  .sn-icon:hover, .sn-icon:focus {
+.svg-icon {
+   fill: #F4F4FD;
+   
+}
+  .sn-link:hover, .sn-link:focus {
     background-color: #31D0AA;
   }
 

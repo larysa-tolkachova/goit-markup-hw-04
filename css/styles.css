@@ -329,7 +329,7 @@ button{
    
 }
   .sn-link:hover, .sn-link:focus {
-    background-color: #31D0AA;
+    background-color: #404bbf;
   }
 
   
@@ -449,10 +449,13 @@ font-weight: 500;
 }
 .footer-cont {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+
 }
 
-
+.footer-lt {
+    margin-right: 120px
+}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -477,22 +480,23 @@ font-weight: 500;
     color: #f4f4fd;
     width: 264px;
     margin-top: 16px;
-    margin-right: 120px; /* ????*/
+    
 }
 
-.footer-icon {
-    max-width: 208px;
-    max-height: 80px;
-       
+.sn-footer {
+    gap: 16px;
+          
 }
 
 .footer-media {
+    max-width: 208px;
+    max-height: 80px;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #fff;
-    padding-bottom: 16px;
+    margin-bottom: 16px
     
 }
 /* #endregion footer */

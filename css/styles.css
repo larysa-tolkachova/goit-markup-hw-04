@@ -104,11 +104,10 @@ button{
     padding-bottom: 24px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    /*position: relative; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.menu-item:active::after/*, .menu-item:focus::after*/ {
+.menu-item:hover::after, .menu-item:focus::after {
     content: "";
     width: 100%;
     position: absolute;
